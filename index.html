@@ -1,0 +1,20 @@
+<html>
+<head><</head>
+<body>
+    <script>
+    var a = 47;
+    function test() {
+        var a = 7;
+        function again() {
+            var a = 8;
+            alert(a);  // A
+        }
+        again();
+        alert(a);  // B
+    }
+    test();
+    alert(a);  // C
+    
+</script>
+</body>
+</html>
